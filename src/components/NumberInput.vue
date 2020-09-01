@@ -1,6 +1,6 @@
 <template>
-  <div class="number-input">
-    <input v-model="updatedVal" type="number" v-on:input="$emit('update-value', theKey, $event.target.value)">
+  <div >
+    <input class="number-input" v-model="updatedVal" type="number" v-on:input="$emit('update-value', theKey, $event.target.value)">
   </div>
 </template>
 
@@ -43,5 +43,12 @@ li {
 }
 a {
   color: #42b983;
+}
+
+input.number-input{
+  width:  350px;
+  height: 30px;
+  text-align: center;
+  margin: 5px;
 }
 </style>

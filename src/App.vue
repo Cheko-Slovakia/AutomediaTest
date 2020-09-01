@@ -8,7 +8,7 @@
     ></NumberInput>
 
     <div>
-      <button v-on:click="addNumberInput" >
+      <button v-on:click="addNumberInput" class = "calculate-button" >
       {{total}}
       </button>
     </div>
@@ -89,5 +89,13 @@ li {
 }
 a {
   color: #42b983;
+}
+
+button.calculate-button{
+  width: 358px;
+  height: 36px;
+  text-align: center;
+  margin: 5px;
+
 }
 </style>
